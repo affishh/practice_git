@@ -1,0 +1,14 @@
+name: "hello woring world"
+
+on:
+  push:
+    branches:
+      - master
+      - prod
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steprs:
+      - name: "Print hello world"
+        run: echo "hello"
